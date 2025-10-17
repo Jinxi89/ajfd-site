@@ -1,22 +1,33 @@
-# Codex Setup Bundle
+# AJ Financiële Diensten Website
 
-Dit pakket zet de basis klaar om met **OpenAI Codex (coding agent)** te werken in jouw repo, zonder dat er al app-code wordt aangemaakt.
+Een stijlvolle one-page website voor AJ Financiële Diensten. De site is volledig statisch en
+gebouwd met semantische HTML, moderne CSS en een beetje JavaScript voor interactieve accenten.
 
-## Wat zit erin?
-- `.codex/plan.md` — Takenpakket en prompts om in Codex te plakken.
-- `.github/ISSUE_TEMPLATE/` — Sjablonen voor Feature, Bug en Task.
-- `.github/workflows/ci.yml` — CI-pipeline (install, lint, build, e2e smoke).
-- `.github/workflows/setup-labels.yml` — Handmatige workflow om labels aan te (laten) maken.
-- `.github/labels.json` — Labeldefinities (voor GitHub CLI of de labels-workflow).
-- `CONTRIBUTING.md` — Werkafspraken met Codex.
-- `SECURITY.md` — Beveiligingsrichtlijnen (ENV, secrets, approval-mode).
-- `vercel.sample.json` — Voorbeeld Vercel-config (optioneel).
-- `.env.example` — Voorbeeld environment-variabelen.
+## Structuur
 
-## Snel starten
-1. Maak een lege GitHub-repo aan en commit deze map als eerste commit.
-2. Ga naar **Actions** en run handmatig de workflow **“Setup labels (manual)”**.
-3. Open Issues → **“Backlog: Codex takenpakket”** en start met Taak 1.
-4. Start Codex in **Approval Mode** en plak de prompts uit `.codex/plan.md`.
+```
+public/
+  index.html          # Hoofdpagina
+  assets/
+    css/style.css     # Visuele stijl en layout
+    js/main.js        # Navigatie toggle, feedback voor formulieren, dynamisch jaartal
+```
 
-> Tip: Gebruik branch protection op `main` en vereis dat CI slaagt + 1 review.
+## Ontwikkeling
+
+Open `public/index.html` in je browser om de site lokaal te bekijken. Wil je een eenvoudige
+ontwikkelserver met live reload, gebruik dan bijvoorbeeld:
+
+```bash
+npx serve public
+```
+
+## Content aanpassen
+
+- Pas teksten en statistieken aan in `public/index.html`.
+- Wijzig kleuren, typografie en layout in `public/assets/css/style.css`.
+- Breid interactie uit via `public/assets/js/main.js`.
+
+## Licentie
+
+MIT

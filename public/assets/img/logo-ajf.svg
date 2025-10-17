@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 100" role="img" aria-labelledby="title desc">
+  <title id="title">Logo AJ Financiële Diensten</title>
+  <desc id="desc">Gestileerde letters AJF met blauw verloop</desc>
+  <defs>
+    <linearGradient id="ajfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b4c9c" />
+      <stop offset="100%" stop-color="#0f1c4d" />
+    </linearGradient>
+  </defs>
+  <rect width="180" height="100" fill="transparent" />
+  <g fill="url(#ajfGradient)">
+    <path d="M23 82L50 18h23l27 64h-18l-6-15H47l-6 15H23zm33-30h16l-8-21-8 21z" />
+    <path d="M98 18h18v49c0 6.6-5.4 12-12 12s-12-5.4-12-12V48h18v18c0 1.1.9 2 2 2s2-.9 2-2V18h18v49c0 16.6-13.4 30-30 30s-30-13.4-30-30V18h18v49c0 6.6 5.4 12 12 12s12-5.4 12-12V18z" />
+    <path d="M140 18h35v16h-17v16h15v16h-15v16h-18V18z" />
+  </g>
+</svg>
